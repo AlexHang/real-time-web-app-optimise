@@ -1,5 +1,5 @@
 export const appState = {
-    state: {},
+    state: {},    
     addEntry(key, value){
         this.state[key] = value;
     },
@@ -8,5 +8,8 @@ export const appState = {
     },
     resourseExistsInState(key){
         return !!state[key];
+    },
+    getResource(key){
+        return this.state[key];
     }
 }
