@@ -3,6 +3,7 @@ import { MarkovChain } from "./utils/markov-chain.js";
 
 export class MarkovRecommender extends RecommenderBaseClass{
     markovChain;
+    applicationState;
 
     constructor(pageResourceMapping = {}, userHistory = []){
         super();

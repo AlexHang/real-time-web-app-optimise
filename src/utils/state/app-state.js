@@ -1,15 +1,23 @@
-export const appState = {
-    state: {},    
-    addEntry(key, value){
+export class AppState {
+    state;
+    
+    constructor() {
+        this.state = {};
+    }
+
+    addEntry(key, value) {
         this.state[key] = value;
-    },
-    getState(){
+    }
+
+    getState() {
         return this.state;
-    },
-    resourseExistsInState(key){
-        return !!state[key];
-    },
-    getResource(key){
+    }
+
+    resourceExistsInState(key) {
+        return !!this.state[key];
+    }
+
+    getResource(key) {
         return this.state[key];
     }
 }
